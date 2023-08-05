@@ -2,7 +2,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
 
 
-set(CMAKE_DIR ${CMAKE_CURRENT_LIST_DIR}/Dependencies/Antilatency.CMake)
+set(CMAKE_DIR ${CMAKE_CURRENT_LIST_DIR}/Dependencies/CMake)
 
 #Set toolchain
 if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
@@ -35,7 +35,7 @@ add_library(FirmwareCommonSource INTERFACE)
 #Includes
 target_include_directories(FirmwareCommonSource 
 INTERFACE 
-	"User"
+	"Firmware"
 )
 
 target_sources(FirmwareCommonSource

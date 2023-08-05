@@ -85,9 +85,9 @@ void task2_task(void *pvParameters)
     {
         printf("task2 entry\r\n");
         GPIO_ResetBits(GPIOA, GPIO_Pin_1);
-        vTaskDelay(333);
+        vTaskDelay(100);
         GPIO_SetBits(GPIOA, GPIO_Pin_1);
-        vTaskDelay(333);
+        vTaskDelay(100);
     }
 }
 
