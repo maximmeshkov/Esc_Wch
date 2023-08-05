@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "WCH-Link Devboard",
+            "cwd": "${workspaceRoot}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+           // "device": "riscv",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "${workspaceRoot}/wch-riscv.cfg"
+            ],
+            //"postLaunchCommands": [
+            //    "b main",
+            //    "set mem inaccessible-by-default off",
+            //    "set architecture riscv:rv32",
+            //    "set remotetimeout unlimited"
+            //],
+            "searchDir": ["${workspaceRoot}"],
+            "showDevDebugOutput":"raw"
+        }
+    ]
+}
